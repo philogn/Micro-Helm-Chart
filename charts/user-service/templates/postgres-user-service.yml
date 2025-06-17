@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres-users
+  annotations:
+    "helm.sh/hook": pre-install
+    "helm.sh/hook-weight": "-10"
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+    argocd.argoproj.io/sync-wave: "0"
+  labels:
+    app: postgres-users
+spec:
+  ports:
+  - port: 5432
+    targetPort: 5432
+    protocol: TCP
+    name: postgres
+  selector:
+    app: postgres-users
+  type: ClusterIP
+  sessionAffinity: None 

@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: redis-cart
+  annotations:
+    "helm.sh/hook": pre-install
+    "helm.sh/hook-weight": "-5"
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+    argocd.argoproj.io/sync-wave: "1" 
+spec:
+  selector:
+    matchLabels:
+      app: redis-cart
+  serviceName: "redis-cart"
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: redis-cart
+    spec:
+      containers:
+      - name: redis
+        image: redis:7.0
+        ports:
+        - containerPort: 6379
+        env:
+        - name: REDIS_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: ecommerce-cart-secret
+              key: REDIS_PASSWORD
+              optional: true
+        volumeMounts:
+        - name: redis-cart-data
+          mountPath: /data
+      volumes:
+        - name: redis-cart-data
+          persistentVolumeClaim:
+            claimName: redis-cart-pvc
