@@ -39,12 +39,5 @@ spec:
             envFrom:
               - secretRef:
                   name: ecommerce-product-secret
-            volumesMounts:
-              - name: product-images-pvc
-                mountPath: /uploads/products
-        volumes:
-          - name: product-images-pvc
-            persistentVolumeClaim:
-              claimName: product-images-pvc
         imagePullSecrets:
           - name: {{ .Values.global.pullSecret }}
