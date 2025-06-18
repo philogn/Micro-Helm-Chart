@@ -16,7 +16,7 @@ broker-service:
 cart-service:
   image:
     repository: "cart-service"
-    tag: "5896f1a5"
+    tag: "v1"
 checkout-service:
   image:
     repository: "checkout-service"
