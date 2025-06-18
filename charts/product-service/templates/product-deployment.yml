@@ -39,7 +39,7 @@ spec:
             envFrom:
               - secretRef:
                   name: ecommerce-product-secret
-            volumeMounts:
+            volumesMounts:
               - name: product-images-pvc
                 mountPath: /uploads/products
         volumes:

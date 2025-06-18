@@ -39,7 +39,7 @@ spec:
                 secretKeyRef:
                   name: ecommerce-auth-secret
                   key: AUTH_DB_NAME
-          volumeMounts:
+          volumesMounts:
               - name: postgres-auth-data
                 mountPath: /var/lib/postgresql/data
       volumes:

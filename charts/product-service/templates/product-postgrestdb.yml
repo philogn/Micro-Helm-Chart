@@ -39,7 +39,7 @@ spec:
                 secretKeyRef:
                   name: ecommerce-product-secret
                   key: PRODUCT_DB_NAME
-          volumeMounts:
+          volumesMounts:
               - name: postgres-products-data
                 mountPath: /var/lib/postgresql/data
       volumes:
