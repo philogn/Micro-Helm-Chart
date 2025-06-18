@@ -1,5 +1,5 @@
 global:
-  imageRegistry: "harbor.deploy.io.vn"
+  imageRegistry: "harbor.deploy.io.vn/sapogo-shop"
   pullSecret: "harbor-secret"
   domain:
     frontend: "sapogo.deploy.io.vn"
