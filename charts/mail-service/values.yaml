@@ -2,3 +2,6 @@ image:
   repository: ""
   tag: ""
   pullSecret: ""
+config:
+  MAIL_USERNAME: ""
+  MAIL_PASSWORD: ""

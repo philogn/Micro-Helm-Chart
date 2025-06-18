@@ -5,6 +5,22 @@ global:
     frontend: "sapogo.deploy.io.vn"
     backend: "api-sapogo.deploy.io.vn"
     s3: "minioapi.deploy.io.vn"
+product-service:
+  image:
+    repository: "product-service"
+    tag: "263227c5"
+  config:
+    minio-access-key: "rXlfNAcKqLMAlDbjOdkr"
+    minio-secret-key: "XOAvAB0YR8jsu9Gh8e7SfZ1HqtbLOtIkicEetVHR"
+
+mail-service:
+  image:
+    repository: "mail-service"
+    tag: "f7f31d4e"
+  config:
+    MAIL_USERNAME: "noreply@vntech.id.vn"
+    MAIL_PASSWORD: "Tannghi123@"
+
 authentication-service:
   image:
     repository: "authentication-service"
@@ -33,14 +49,6 @@ logger-service:
   image:
     repository: "logger-service"
     tag: "4ea0a582"
-mail-service:
-  image:
-    repository: "mail-service"
-    tag: "f7f31d4e"
-product-service:
-  image:
-    repository: "product-service"
-    tag: "263227c5"
 user-service:
   image:
     repository: "user-service"
