@@ -15,7 +15,7 @@ spec:
       initContainers:
         - name: wait-for-postgres-auth-db
           image: busybox:1.28
-          command: ['sh', '-c', 'until nslookup postgres-auth.ecommerce.svc.cluster.local && nc -z postgres-auth 5432; do echo waiting for postgres; sleep 2; done;']
+          command: ['sh', '-c', 'until nslookup postgres-auth.{{ .Values.global.namespace }}.svc.cluster.local && nc -z postgres-auth 5432; do echo waiting for postgres; sleep 2; done;']
       containers:
       - name: migrations
         image: "{{ .Values.global.imageRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
