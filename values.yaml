@@ -10,8 +10,8 @@ product-service:
     repository: "product-service"
     tag: "263227c5"
   config:
-    minio-access-key: "rXlfNAcKqLMAlDbjOdkr"
-    minio-secret-key: "XOAvAB0YR8jsu9Gh8e7SfZ1HqtbLOtIkicEetVHR"
+    minioAccessKey: "rXlfNAcKqLMAlDbjOdkr"
+    minioSecretKey: "XOAvAB0YR8jsu9Gh8e7SfZ1HqtbLOtIkicEetVHR"
 
 mail-service:
   image:
