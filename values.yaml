@@ -2,45 +2,45 @@ global:
   imageRegistry: "harbor.deploy.io.vn"
   pullSecret: "harbor-secret"
   domain:
-    frontend: "beeshoes.deploy.io.vn"
-    backend: "api-beeshoes.deploy.io.vn"
+    frontend: "sapogo.deploy.io.vn"
+    backend: "api-sapogo.deploy.io.vn"
 auth-service:
   image:
-    repository: "auth-service"
-    tag: "test"
+    repository: "authentication-service"
+    tag: "6595c4b1"
 broker-service:
   image:
     repository: "broker-service"
-    tag: "test"
+    tag: "9b509937"
 cart-service:
   image:
     repository: "cart-service"
-    tag: "test"
+    tag: "c6bb3d4a"
 checkout-service:
   image:
     repository: "checkout-service"
-    tag: "test"
-frontend-service:
+    tag: "45e15473"
+frontend:
   image:
-    repository: "frontend-service"
-    tag: "test"
+    repository: "frontend"
+    tag: "247beecf"
 listener-service:
   image:
     repository: "listener-service"
-    tag: "test"
+    tag: "196f976a"
 logger-service:
   image:
     repository: "logger-service"
-    tag: "test"
+    tag: "4ea0a582"
 mail-service:
   image:
     repository: "mail-service"
-    tag: "test"
+    tag: "f7f31d4e"
 product-service:
   image:
     repository: "product-service"
-    tag: "test"
+    tag: "263227c5"
 user-service:
   image:
     repository: "user-service"
-    tag: "test"
+    tag: "947b00ed"
