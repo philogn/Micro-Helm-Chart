@@ -20,7 +20,7 @@ spec:
         initContainers:
           - name: wait-for-postgres-user-db
             image: busybox:1.28
-            command: ['sh', '-c', 'until nslookup postgres-users.ecommerce.svc.cluster.local; do echo waiting for postgres; sleep 2; done;']
+            command: ['sh', '-c', 'until nslookup postgres-users.{{ .Values.global.namespace }}.svc.cluster.local; do echo waiting for postgres; sleep 2; done;']
         containers:
           - name: ecommerce-user-app
             image: "{{ .Values.global.imageRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"

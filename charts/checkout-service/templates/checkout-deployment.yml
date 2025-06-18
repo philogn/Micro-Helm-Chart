@@ -20,7 +20,7 @@ spec:
         initContainers:
           - name: wait-for-postgres-checkout-db
             image: busybox:1.28
-            command: ['sh', '-c', 'until nslookup mongo-checkout.ecommerce.svc.cluster.local; do echo waiting for mongo; sleep 2; done;']
+            command: ['sh', '-c', 'until nslookup mongo-checkout.{{ .Values.global.namespace }}.svc.cluster.local; do echo waiting for mongo; sleep 2; done;']
         containers:
           - name: ecommerce-checkout-app
             image: "{{ .Values.global.imageRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
