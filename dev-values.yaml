@@ -1,17 +1,18 @@
 global:
-  imageRegistry: "harbor.deploy.io.vn/sapogo-shop"
-  pullSecret: "harbor-secret"
+  imageRegistry: ""
+  pullSecret: ""
   domain:
-    frontend: "sapogo.deploy.io.vn"
-    backend: "api-sapogo.deploy.io.vn"
-    s3: "minioapi.deploy.io.vn"
+    frontend: ""
+    backend: ""
+    s3: ""
+
 product-service:
   image:
     repository: "product-service"
     tag: "263227c5"
   config:
-    minioAccessKey: "rXlfNAcKqLMAlDbjOdkr"
-    minioSecretKey: "XOAvAB0YR8jsu9Gh8e7SfZ1HqtbLOtIkicEetVHR"
+    minioAccessKey: ""
+    minioSecretKey: ""
 
 mail-service:
   image:
