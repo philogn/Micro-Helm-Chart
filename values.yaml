@@ -4,6 +4,7 @@ global:
   domain:
     frontend: "sapogo.deploy.io.vn"
     backend: "api-sapogo.deploy.io.vn"
+    s3: "minioapi.deploy.io.vn"
 authentication-service:
   image:
     repository: "authentication-service"
