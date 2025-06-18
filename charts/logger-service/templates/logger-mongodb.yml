@@ -39,7 +39,7 @@ spec:
                 secretKeyRef:
                   name: ecommerce-logger-secret
                   key: MONGO_PASSWORD
-          volumesMounts:
+          volumeMounts:
               - name: mongo-logger-data
                 mountPath: /data/db
       volumes:

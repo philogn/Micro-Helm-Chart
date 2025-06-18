@@ -4,7 +4,7 @@ global:
   domain:
     frontend: "sapogo.deploy.io.vn"
     backend: "api-sapogo.deploy.io.vn"
-auth-service:
+authentication-service:
   image:
     repository: "authentication-service"
     tag: "6595c4b1"
