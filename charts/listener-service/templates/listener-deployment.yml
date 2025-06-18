@@ -21,7 +21,7 @@ spec:
       initContainers:
         - name: wait-for-rabbitmq
           image: busybox:1.28
-          command: ['sh', '-c', 'until nslookup rabbitmq.ecommerce.svc.cluster.local; do echo waiting for rabbitmq; sleep 2; done;']
+          command: ['sh', '-c', 'until nslookup rabbitmq.{{ .Values.global.namespace }}.svc.cluster.local; do echo waiting for rabbitmq; sleep 2; done;']
         - name: wait-for-mail-service
           image: busybox:1.28
           command: ['sh', '-c', 'until nslookup ecommerce-mail-service.ecommerce.svc.cluster.local; do echo waiting for mail service; sleep 2; done;']
