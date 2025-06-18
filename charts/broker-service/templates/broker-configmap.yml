@@ -8,4 +8,4 @@ data:
   PRODUCT_SERVICE_HOST: "ecommerce-product-service:50053"
   CART_SERVICE_HOST: "ecommerce-cart-service:50054"
   CHECKOUT_SERVICE_HOST: "ecommerce-checkout-service:50055"
-  ALLOWED_ORIGINS: "https://{{ .Values.global.domain.frontend }},http://{{ .Values.global.domain.frontend }},https://test-payment.momo.vn, https://{{ .Values.global.domain.s3 }}"
+  ALLOWED_ORIGINS: "https://*,http://*,https://test-payment.momo.vn, https://{{ .Values.global.domain.s3 }}"
