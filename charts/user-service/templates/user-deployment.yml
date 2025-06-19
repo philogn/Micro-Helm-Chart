@@ -30,11 +30,11 @@ spec:
                 protocol: TCP
             resources:
               requests:
-                cpu: "125m"
-                memory: "250Mi"
+                cpu: "250m"
+                memory: "350Mi"
               limits:
                 cpu: "250m"
-                memory: "500Mi"
+                memory: "750Mi"
             envFrom:
               - secretRef:
                   name: ecommerce-user-secret
