@@ -9,7 +9,7 @@ global:
 product-service:
   image:
     repository: "product-service"
-    tag: "263227c5"
+    tag: "fdad773f"
   config:
     minioAccessKey: ""
     minioSecretKey: ""
