@@ -6,7 +6,6 @@ global:
     frontend: ""
     backend: ""
     s3: ""
-
 product-service:
   image:
     repository: "product-service"
@@ -14,7 +13,6 @@ product-service:
   config:
     minioAccessKey: ""
     minioSecretKey: ""
-
 mail-service:
   image:
     repository: "mail-service"
@@ -22,7 +20,6 @@ mail-service:
   config:
     MAIL_USERNAME: "noreply@vntech.id.vn"
     MAIL_PASSWORD: "Tannghi123@"
-
 authentication-service:
   image:
     repository: "authentication-service"
@@ -50,7 +47,7 @@ listener-service:
 logger-service:
   image:
     repository: "logger-service"
-    tag: "4ea0a582"
+    tag: "c81b5fe8"
 user-service:
   image:
     repository: "user-service"
