@@ -39,7 +39,7 @@ checkout-service:
 frontend:
   image:
     repository: "frontend"
-    tag: "25aaf207"
+    tag: "72553145"
 listener-service:
   image:
     repository: "listener-service"
