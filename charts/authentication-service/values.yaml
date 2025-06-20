@@ -2,3 +2,4 @@ image:
   repository: ""
   tag: ""
   pullSecret: ""
+ENVIRONMENT: ""

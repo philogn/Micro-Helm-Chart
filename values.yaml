@@ -23,7 +23,7 @@ mail-service:
 authentication-service:
   image:
     repository: "authentication-service"
-    tag: "6595c4b1"
+    tag: "v1"
 broker-service:
   image:
     repository: "broker-service"
