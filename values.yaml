@@ -9,14 +9,14 @@ global:
 product-service:
   image:
     repository: "product-service"
-    tag: "fdad773f"
+    tag: "59001879"
   config:
     minioAccessKey: ""
     minioSecretKey: ""
 mail-service:
   image:
     repository: "mail-service"
-    tag: "f7f31d4e"
+    tag: "5919c246"
   config:
     MAIL_USERNAME: "noreply@vntech.id.vn"
     MAIL_PASSWORD: "Tannghi123@"
@@ -27,7 +27,7 @@ authentication-service:
 broker-service:
   image:
     repository: "broker-service"
-    tag: "9b509937"
+    tag: "771b2f19"
 cart-service:
   image:
     repository: "cart-service"
@@ -51,4 +51,4 @@ logger-service:
 user-service:
   image:
     repository: "user-service"
-    tag: "v1"
+    tag: "eccd0609"

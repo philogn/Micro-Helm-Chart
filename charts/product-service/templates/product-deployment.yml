@@ -26,7 +26,6 @@ spec:
             image: "{{ .Values.global.imageRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
             ports: 
               - containerPort: 50053
-              - containerPort: 8082
                 name: tcp
                 protocol: TCP
             resources:
