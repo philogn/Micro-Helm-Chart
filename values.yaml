@@ -24,7 +24,7 @@ rabbitmq:
   auth:
     username: guest
     password: guest
-  replicaCount: "3"
+  replicaCount: 3
   persistence:
     enabled: true
     storageClass: "longhorn-storage-retain"
