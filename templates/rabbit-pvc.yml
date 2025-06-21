@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: rabbitmq-data-pvc
   annotations:
-    argocd.argoproj.io/sync-options: Skip
+    argocd.argoproj.io/sync-options: Delete=false
 spec:
   accessModes:
     - ReadWriteOnce
