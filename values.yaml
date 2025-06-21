@@ -43,7 +43,7 @@ frontend:
 listener-service:
   image:
     repository: "listener-service"
-    tag: "196f976a"
+    tag: "b5044da3"
 logger-service:
   image:
     repository: "logger-service"
