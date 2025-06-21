@@ -51,4 +51,4 @@ logger-service:
 user-service:
   image:
     repository: "user-service"
-    tag: "947b00ed"
+    tag: "v1"
