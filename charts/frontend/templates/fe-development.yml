@@ -20,7 +20,7 @@ spec:
       spec:
         containers:
           - name: ecommerce-frontend
-            image: "{{ .Values.global.imageRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+            image: "{{ .Values.global.privateRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
             ports: 
               - containerPort: 80
                 name: tcp

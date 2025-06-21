@@ -23,7 +23,7 @@ spec:
             command: ['sh', '-c', 'until nslookup mongo-checkout.{{ .Values.global.namespace }}.svc.cluster.local; do echo waiting for mongo; sleep 2; done;']
         containers:
           - name: ecommerce-checkout-app
-            image: "{{ .Values.global.imageRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+            image: "{{ .Values.global.privateRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
             ports: 
               - containerPort: 50055
                 name: tcp

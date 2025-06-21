@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: ecommerce-broker-app
-        image: "{{ .Values.global.imageRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        image: "{{ .Values.global.privateRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         ports:
         - containerPort: 8080
           name: tcp

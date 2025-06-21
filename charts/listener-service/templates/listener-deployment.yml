@@ -27,7 +27,7 @@ spec:
           command: ['sh', '-c', 'until nslookup ecommerce-mail-service.{{ .Values.global.namespace }}.svc.cluster.local; do echo waiting for mail service; sleep 2; done;']
       containers:
         - name: ecommerce-listener-app
-          image: "{{ .Values.global.imageRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          image: "{{ .Values.global.privateRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           resources:
             requests:
               cpu: "50m"

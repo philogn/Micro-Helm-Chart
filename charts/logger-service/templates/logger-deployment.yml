@@ -23,7 +23,7 @@ spec:
             command: ['sh', '-c', 'until nslookup mongo-logger.{{ .Values.global.namespace }}.svc.cluster.local; do echo waiting for mongo; sleep 2; done;']
         containers:
           - name: ecommerce-logger-app
-            image: "{{ .Values.global.imageRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+            image: "{{ .Values.global.privateRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
             ports: 
               - containerPort: 50056
                 name: tcp

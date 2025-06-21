@@ -18,7 +18,7 @@ spec:
           command: ['sh', '-c', 'until nslookup postgres-auth.{{ .Values.global.namespace }}.svc.cluster.local && nc -z postgres-auth 5432; do echo waiting for postgres; sleep 2; done;']
       containers:
       - name: migrations
-        image: "{{ .Values.global.imageRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        image: "{{ .Values.global.privateRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: IfNotPresent
         command: ["/bin/sh", "-c"]
         args:

@@ -23,7 +23,7 @@ spec:
             command: ['sh', '-c', 'until nslookup redis-cart.{{ .Values.global.namespace }}.svc.cluster.local; do echo waiting for redis; sleep 2; done;']
         containers:
           - name: ecommerce-cart-app
-            image: "{{ .Values.global.imageRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+            image: "{{ .Values.global.privateRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
             ports: 
               - containerPort: 50054
                 name: tcp
