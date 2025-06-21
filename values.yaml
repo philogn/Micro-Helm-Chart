@@ -22,9 +22,9 @@ mail-service:
     MAIL_PASSWORD: "Tannghi123@"
 rabbitmq:
   auth:
-    username: user
-    password: pass
-    replicaCount: "3"
+    username: guest
+    password: guest
+  replicaCount: "3"
   persistence:
     enabled: true
     storageClass: "longhorn-storage-retain"
