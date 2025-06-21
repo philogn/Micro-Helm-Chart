@@ -26,7 +26,7 @@ rabbitmq:
     password: pass
     replicaCount: "3"
   persistence:
-    enabled: "true"
+    enabled: true
     storageClass: "longhorn-storage-retain"
     size: "2Gi"
   fullnameOverride: rabbitmq
