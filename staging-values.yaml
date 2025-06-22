@@ -31,7 +31,7 @@ rabbitmq:
   persistence:
     enabled: true
     storageClass: "longhorn-storage-retain"
-    size: 2Gi
+    size: 1Gi
   fullnameOverride: rabbitmq
 authentication-service:
   image:
@@ -52,7 +52,7 @@ checkout-service:
 frontend:
   image:
     repository: "frontend"
-    tag: "95b8716f-v1.8-staging"
+    tag: "95b8716f-v1.8-frontend-staging"
 listener-service:
   image:
     repository: "listener-service"
