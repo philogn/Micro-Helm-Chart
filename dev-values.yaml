@@ -10,7 +10,7 @@ global:
 product-service:
   image:
     repository: "product-service"
-    tag: "harbor.deploy.io.vn/sapogo-shop/product-service:ca352633-v1.3"
+    tag: "ca352633-v1.3"
   config:
     minioAccessKey: ""
     minioSecretKey: ""
@@ -37,7 +37,7 @@ rabbitmq:
 authentication-service:
   image:
     repository: "authentication-service"
-    tag: "harbor.deploy.io.vn/sapogo-shop/authentication-service:d3ebb85f-v1.4"
+    tag: "d3ebb85f-v1.4"
 broker-service:
   image:
     repository: "broker-service"
