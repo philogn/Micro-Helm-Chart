@@ -36,7 +36,7 @@ rabbitmq:
 authentication-service:
   image:
     repository: "authentication-service"
-    tag: "d3ebb85f"
+    tag: "harbor.deploy.io.vn/sapogo-shop/authentication-service:d3ebb85f-v1.4"
 broker-service:
   image:
     repository: "broker-service"
