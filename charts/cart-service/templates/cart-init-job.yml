@@ -4,6 +4,7 @@ metadata:
   name: cart-service-redis-init
   annotations:
     argocd.argoproj.io/hook-delete-policy: HookSucceeded
+    argocd.argoproj.io/sync-options: Ignore=true
     argocd.argoproj.io/sync-wave: "-1"
 spec:
   backoffLimit: 3  # try 3 times if failed

@@ -17,7 +17,7 @@ product-service:
 mail-service:
   image:
     repository: "mail-service"
-    tag: "5919c246"
+    tag: "v1"
   config:
     MAIL_USERNAME: "noreply@vntech.id.vn"
     MAIL_PASSWORD: "Tannghi123@"
@@ -49,7 +49,7 @@ cart-service:
 checkout-service:
   image:
     repository: "checkout-service"
-    tag: "45e15473"
+    tag: "v1"
 frontend:
   image:
     repository: "frontend"
@@ -57,7 +57,7 @@ frontend:
 listener-service:
   image:
     repository: "listener-service"
-    tag: "b5044da3"
+    tag: "v1"
 logger-service:
   image:
     repository: "logger-service"
