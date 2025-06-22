@@ -1,4 +1,5 @@
 global:
+  env: "staging"
   namespace: ""
   privateRegistry: ""
   pullSecret: ""

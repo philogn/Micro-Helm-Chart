@@ -1,0 +1,67 @@
+global:
+  env: "dev"
+  namespace: ""
+  privateRegistry: ""
+  pullSecret: ""
+  domain:
+    frontend: ""
+    backend: ""
+    s3: ""
+product-service:
+  image:
+    repository: "product-service"
+    tag: "59001879"
+  config:
+    minioAccessKey: ""
+    minioSecretKey: ""
+mail-service:
+  image:
+    repository: "mail-service"
+    tag: "5919c246"
+  config:
+    MAIL_USERNAME: "noreply@vntech.id.vn"
+    MAIL_PASSWORD: "Tannghi123@"
+rabbitmq:
+  commonAnnotations:
+    argocd.argoproj.io/sync-wave: "-1"
+  auth:
+    username: guest
+    password: guest
+  replicaCount: 3
+  persistence:
+    enabled: true
+    storageClass: "longhorn-storage-retain"
+    size: "2Gi"
+  fullnameOverride: rabbitmq
+authentication-service:
+  image:
+    repository: "authentication-service"
+    tag: "v1"
+broker-service:
+  image:
+    repository: "broker-service"
+    tag: "771b2f19"
+cart-service:
+  image:
+    repository: "cart-service"
+    tag: "v1"
+checkout-service:
+  image:
+    repository: "checkout-service"
+    tag: "45e15473"
+frontend:
+  image:
+    repository: "frontend"
+    tag: "cd809d23-v1.6-frontend-dev"
+listener-service:
+  image:
+    repository: "listener-service"
+    tag: "b5044da3"
+logger-service:
+  image:
+    repository: "logger-service"
+    tag: "c81b5fe8"
+user-service:
+  image:
+    repository: "user-service"
+    tag: "eccd0609"

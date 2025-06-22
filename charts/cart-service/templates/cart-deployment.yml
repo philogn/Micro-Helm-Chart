@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: ecommerce-cart-development
 spec:
-  replicas: 2
+  replicas: {{ if eq .Values.global.env "dev" }}1{{ else }}2{{ end }}
   selector:
     matchLabels:
       app: ecommerce-cart-app

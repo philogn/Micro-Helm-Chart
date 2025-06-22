@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: {{ .Values.global.domain.backend }}
+    - host: "{{ .Values.global.env }}-{{ .Values.global.domain.backend }}"
       http:
         paths:
           - path: /

@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: ecommerce-checkout-development
 spec:
-  replicas: 2
+  replicas: {{ if eq .Values.global.env "dev" }}1{{ else }}2{{ end }}
   selector:
     matchLabels:
       app: ecommerce-checkout-app
