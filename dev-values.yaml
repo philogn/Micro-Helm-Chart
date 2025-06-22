@@ -10,7 +10,7 @@ global:
 product-service:
   image:
     repository: "product-service"
-    tag: "59001879"
+    tag: "harbor.deploy.io.vn/sapogo-shop/product-service:ca352633-v1.3"
   config:
     minioAccessKey: ""
     minioSecretKey: ""
