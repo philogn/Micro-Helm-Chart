@@ -52,7 +52,7 @@ checkout-service:
 frontend:
   image:
     repository: "frontend"
-    tag: "95b8716f-v1.9-dev"
+    tag: "95b8716f-v2.0-dev"
 listener-service:
   image:
     repository: "listener-service"
