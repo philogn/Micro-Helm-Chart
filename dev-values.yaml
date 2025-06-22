@@ -36,7 +36,7 @@ rabbitmq:
 authentication-service:
   image:
     repository: "authentication-service"
-    tag: "v1"
+    tag: "d3ebb85f"
 broker-service:
   image:
     repository: "broker-service"
