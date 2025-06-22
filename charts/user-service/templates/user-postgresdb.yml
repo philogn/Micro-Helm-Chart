@@ -3,7 +3,7 @@ kind: StatefulSet
 metadata:
   name: postgres-users
   annotations:
-    argocd.argoproj.io/sync-wave: "1"
+    argocd.argoproj.io/sync-wave: "-2"
 spec:
   serviceName: postgres-users
   replicas: 1

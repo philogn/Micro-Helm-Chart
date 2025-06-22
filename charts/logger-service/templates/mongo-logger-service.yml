@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: mongo-logger
   annotations:
-    argocd.argoproj.io/sync-wave: "0"
+    argocd.argoproj.io/sync-wave: "-3"
   labels:
     app: mongo-logger
 spec:

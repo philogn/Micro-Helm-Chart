@@ -4,7 +4,7 @@ metadata:
   name: ecommerce-product-db-migration
   annotations:
     argocd.argoproj.io/hook-delete-policy: HookSucceededd
-    argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/sync-wave: "-1"
 spec:
   backoffLimit: 3  # try 3 times if failed
   ttlSecondsAfterFinished: 3600  # auto delete job after 1 hour

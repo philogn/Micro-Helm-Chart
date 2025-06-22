@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: ecommerce-cart-service
   annotations:
-    argocd.argoproj.io/sync-wave: "0"
+    argocd.argoproj.io/sync-wave: "-3"
 spec:
   selector:
     app: ecommerce-cart-app

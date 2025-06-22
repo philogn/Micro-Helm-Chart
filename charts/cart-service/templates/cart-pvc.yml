@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: redis-cart-pvc
   annotations:
-    argocd.argoproj.io/sync-wave: "0"
+    argocd.argoproj.io/sync-wave: "-3"
     argocd.argoproj.io/sync-options: Delete=false
 spec:
   accessModes:
