@@ -3,8 +3,6 @@ kind: StatefulSet
 metadata:
   name: postgres-products
   annotations:
-    "helm.sh/hook": pre-install
-    "helm.sh/hook-weight": "-5"
     argocd.argoproj.io/sync-wave: "1"
 spec:
   serviceName: postgres-products

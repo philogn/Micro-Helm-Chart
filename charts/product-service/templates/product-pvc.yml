@@ -3,8 +3,6 @@ kind: PersistentVolumeClaim
 metadata:
   name: postgres-products-pvc
   annotations:
-    "helm.sh/hook": pre-install
-    "helm.sh/hook-weight": "-10"
     argocd.argoproj.io/sync-wave: "0"
     argocd.argoproj.io/sync-options: Delete=false
 spec:
