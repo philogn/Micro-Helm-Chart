@@ -10,7 +10,7 @@ global:
 product-service:
   image:
     repository: "product-service"
-    tag: "59001879"
+    tag: "ca352633-v1.3"
   config:
     minioAccessKey: ""
     minioSecretKey: ""
@@ -24,7 +24,7 @@ mail-service:
 rabbitmq:
   commonAnnotations:
     argocd.argoproj.io/sync-wave: "-1"
-    argocd.argoproj.io/sync-options: Skip
+    argocd.argoproj.io/sync-options: Ignore=true
   auth:
     username: guest
     password: guest
@@ -37,7 +37,7 @@ rabbitmq:
 authentication-service:
   image:
     repository: "authentication-service"
-    tag: "v1"
+    tag: "d3ebb85f-v1.4"
 broker-service:
   image:
     repository: "broker-service"
@@ -53,7 +53,7 @@ checkout-service:
 frontend:
   image:
     repository: "frontend"
-    tag: "95b8716f-v1.0-prod"
+    tag: "95b8716f-v1.8-dev"
 listener-service:
   image:
     repository: "listener-service"

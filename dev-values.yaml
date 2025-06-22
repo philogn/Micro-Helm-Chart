@@ -24,7 +24,7 @@ mail-service:
 rabbitmq:
   commonAnnotations:
     argocd.argoproj.io/sync-wave: "-1"
-    argocd.argoproj.io/sync-options: Skip
+    argocd.argoproj.io/sync-options: Ignore=true
   auth:
     username: guest
     password: guest
