@@ -21,6 +21,8 @@ mail-service:
     MAIL_USERNAME: "noreply@vntech.id.vn"
     MAIL_PASSWORD: "Tannghi123@"
 rabbitmq:
+  commonAnnotations:
+    argocd.argoproj.io/sync-wave: "0"
   auth:
     username: guest
     password: guest
