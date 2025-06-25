@@ -4,7 +4,6 @@ metadata:
   name: mongo-checkout
   annotations:
     argocd.argoproj.io/sync-wave: "-2"
-    argocd.argoproj.io/hook: PreSync
 spec:
   serviceName: mongo-checkout
   replicas: 1

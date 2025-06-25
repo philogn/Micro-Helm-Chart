@@ -4,7 +4,6 @@ metadata:
   name: postgres-users
   annotations:
     argocd.argoproj.io/sync-wave: "-2"
-    argocd.argoproj.io/hook: PreSync
 spec:
   serviceName: postgres-users
   replicas: 1
