@@ -49,7 +49,7 @@ cart-service:
 checkout-service:
   image:
     repository: "checkout-service"
-    tag: "45e15473"
+    tag: "be5899b5-v1.1"
 frontend:
   image:
     repository: "frontend"
