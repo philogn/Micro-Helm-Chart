@@ -27,9 +27,6 @@ spec:
               name: ecommerce-cart-secret
               key: REDIS_PASSWORD
               optional: true
-        volumesMounts:
-        - name: redis-cart-data
-          mountPath: /data
       volumes:
         - name: redis-cart-data
           persistentVolumeClaim:

@@ -36,9 +36,6 @@ spec:
                 secretKeyRef:
                   name: ecommerce-checkout-secret
                   key: MONGO_PASSWORD
-          volumesMounts:
-              - name: mongo-checkout-data
-                mountPath: /data/db
       volumes:
         - name: mongo-checkout-data
           persistentVolumeClaim:

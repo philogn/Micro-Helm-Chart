@@ -36,9 +36,6 @@ spec:
                 secretKeyRef:
                   name: ecommerce-user-secret
                   key: USER_DB_NAME
-          volumesMounts:
-              - name: postgres-users-data
-                mountPath: /var/lib/postgresql/data
       volumes:
         - name: postgres-users-data
           persistentVolumeClaim:
