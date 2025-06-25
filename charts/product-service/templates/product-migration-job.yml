@@ -5,7 +5,7 @@ metadata:
   annotations:
     argocd.argoproj.io/hook-delete-policy: HookSucceededd
     argocd.argoproj.io/sync-options: Ignore=true
-    argocd.argoproj.io/compare-options: "IgnoreExtraneous"
+    argocd.argoproj.io/hook: PreSync
     argocd.argoproj.io/sync-wave: "-1"
 spec:
   backoffLimit: 3  # try 3 times if failed
