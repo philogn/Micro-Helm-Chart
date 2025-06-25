@@ -50,7 +50,7 @@ cart-service:
 checkout-service:
   image:
     repository: "checkout-service"
-    tag: "be5899b5-v1.3"
+    tag: "be5899b5-v1.2"
 frontend:
   image:
     repository: "frontend"
