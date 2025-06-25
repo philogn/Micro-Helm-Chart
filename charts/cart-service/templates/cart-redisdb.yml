@@ -4,6 +4,7 @@ metadata:
   name: redis-cart
   annotations:
     argocd.argoproj.io/sync-wave: "-2" 
+    argocd.argoproj.io/hook: PreSync
 spec:
   selector:
     matchLabels:
